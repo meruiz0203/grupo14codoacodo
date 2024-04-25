@@ -1,0 +1,54 @@
+
+header {
+    background-color: orange;
+    overflow: auto;
+    padding: 10px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.logo {
+    float: left;
+    border-radius: 10%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.search-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav {
+    float: right; 
+}
+
+nav ul {
+    list-style: none;
+    background-color: #535353;
+    color: white;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
+}
+
+nav ul li a {
+    line-height: 1.4;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 8px;
+}
+

@@ -1,0 +1,62 @@
+
+
+form h2 {
+    text-align: center;
+    color: #666;
+}
+
+form {
+    font-style: italic;
+    background-color: url("//src/img/logoCompleto.jpg") ;
+    padding: 2.px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 55px #fff2;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form_input {
+    padding: 6px 20px;
+    background-color: black;
+}
+
+input, textarea select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid#666;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #eee;
+    margin-top: 4px;
+}
+
+option {
+    background-color: #333;
+}
+
+textarea {
+    min-width: 100%;
+    resize: none;
+    min-height: 102px;
+    font-family: sans-serif;
+    form-sizing: content
+}
+
+label {
+    font-size: 0.9em;
+    line-height: 2.1;
+}
+
+.checkbox {
+    width: auto;
+    height: 10px;
+}
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Farmacia "Nombre"</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/src/img/logoCompleto.jpg" alt="logo">
+        </div>
+        <div class="search-form">
+            <form action="/buscar" method="get">
+                <input type="search" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/src/pages/product.html">Productos</a></li>
+                <li><a href="/src/pages/form.html">Contactanos</a></li>
+                <li><a href="/src/pages/ubicacion.html">Donde Estamos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <h2>Somos tu Farmacia de Confianza</h2>
+    <form  action="" method="post">
+        <h2>Formulario de Contacto</h2>
+        <br>
+        <div class="form_input">
+            <label>Nombre Completo</label>
+            <input type="text" name= "user" placeholder="Juan Perez">
+        </div>
+        
+        <div>
+            <label for="appt">Fecha de Nacimineto:</label>
+            <input type="datetime-local" id="appt" name="appt"  
+            value="2024-06-12T19:30"
+            min="2024-06-07T00:00"
+            max="2024-06-14T00:00"  required />
+        </div>
+    
+        <div class="form_input">
+            <label>Email</label>
+            <input type="email"  name="email" placeholder=" jperez@email.com">
+        </div>
+    
+        <div class="form_input">
+            <label>Tipo de Usuario
+            <select name="type-of-user">
+                <option value="user1">Obra Social</option>
+                <option value="user2">Particular</option>
+                <option value="user3">Otro</option>
+            </select>
+            </label>
+        </div>
+    
+        <div class="form_input">
+            <label>Mensaje</label>
+            <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
+        </div>
+    
+        <div class="form_input">
+            <label for="">Acepto los Terminos y Condiciones
+                <input type="checkbox"  class="checkbox">
+            </label>
+        </div>
+    
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    </main>
+
+    <footer>
+       
+        <p>© 2024 Generacion Farma SRL. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
