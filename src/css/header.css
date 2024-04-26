@@ -1,37 +1,51 @@
 
 header {
-    background-color: orange;
+    position: relative;
+    background-color: rgba(255, 165, 0, 0.5); 
     overflow: auto;
     padding: 10px; 
-    max-width: 900px; 
     margin: 0 auto; 
 }
 
 .logo {
     float: left;
-    border-radius: 10%;
+    
 }
 
 .logo img {
     width: 100px;
     height: auto;
     display: block;
+    border-radius: 10%;
 }
 
 .search-form {
     text-align: center;
     margin-top: 10px;
+  
 }
+
+.search-form button {
+    padding: 6px 20px; 
+    font-size: 14px; 
+    margin-left: 20px; 
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
 
 nav {
     float: right; 
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
-    background-color: #535353;
-    color: white;
     padding: 0;
+    margin: 0;
+
 }
 
 nav ul li {
