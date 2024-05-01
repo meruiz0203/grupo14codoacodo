@@ -6,16 +6,23 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Farmacia "Nombre"</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-        <img src ="/src/img/logoCompleto.jpg" alt="logo"/>
-        <form action="/buscar" method="get">
-            <input type="search" name="q" placeholder="Buscar...">
+            <img 
+                src="/src/img/logoCompleto.jpg" 
+                alt="logo"
+            />
+        </div>
+        <form class="search-form" action="/buscar" method="get">
+            <input 
+                type="search" 
+                name="q" 
+                placeholder="Escribe aqui que producto buscas..."
+            >
             <button type="submit">Buscar</button>
         </form>
-    </div>
-      
         <nav>
             <ul>
                 <li><a href="/">Inicio</a></li>
@@ -24,40 +31,42 @@
                 <li><a href="/src/pages/ubicacion.html">Donde Estamos</a></li>
             </ul>
         </nav>
-    
     </header>
 
     <main>
+
         <h2>Somos tu Farmacia de Confianza</h2>
-    
-       
-     <div>
-        <p>PRODUCTO 1</p>
-    </div>
-    <div>
-        <p>PRODUCTO 2</p>
-    </div>
-    <div>
-        <p>PRODUCTO 3</p>
-    </div>
-    
-</main>
+        
+        <div>
+            <p>PRODUCTO 1</p>
+        </div>
+        <div>
+            <p>PRODUCTO 2</p>
+        </div>
+        <div>
+            <p>PRODUCTO 3</p>
+        </div>
+        
+    </main>
 
     <footer>
-    </div>
-    <div class="copyright">
-        <p>© 2024 Generacion Farma SRL. Todos los derechos reservados.</p>
-    </div>
-    <div class="terms">
-        <p><a href="#">Términos y Condiciones</a></p>
-    </div>
-    <div class="footer-content">
-        <div class="social-icons">
-            <p>Nuestras Redes Sociales</p> <!-- Texto para las redes sociales -->
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            
+        <div class="copyright">
+            <p>© 2024 Generación Farma SRL. Todos los derechos reservados.</p>
         </div>
-</footer>
+        <div class="terms">
+            <p><a href="#">Términos y Condiciones</a></p>
+        </div>
+        <div class="footer-content">
+            <div class="social-icons">
+                <p>Nuestras redes sociales</p>
+                <a href="https://www.facebook.com/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
