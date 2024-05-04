@@ -52,3 +52,15 @@ header{
     align-items: center;
 } 
 */
+@keyframes miAnimacion {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.logo{
+    animation-name: miAnimacion;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
