@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
     <title>Farmacia "Nombre"</title>
 
+    <!-- Bootstrap 5.3.3 -->
+    <!--
+    <link href="./src/vendor/bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./src/vendor/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    -->
+    
     <!-- FontAwesome Free 5.15.4-->
     <link href="./src/vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
     
+    <!-- Custom -->
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
@@ -19,17 +26,25 @@
                 alt="logo"
             />
         </div>
-        <form class="search-form" action="/buscar" method="get">
+        <form 
+            class="search-form" 
+            action="#" 
+            method="get"
+            >
             <input 
                 type="search" 
                 name="q" 
-                placeholder="Escribe aqui que producto buscas..."
+                placeholder="Buscar producto"
             >
-            <button type="submit">Buscar</button>
+            <button 
+                type="submit"
+                >
+                Buscar
+            </button>
         </form>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="./src/pages/product.html">Productos</a></li>
                 <li><a href="./src/pages/form.html">Contactanos</a></li>
                 <li><a href="./src/pages/ubicacion.html">Dónde Estamos</a></li>
@@ -50,21 +65,21 @@
 
     <footer>
         <div class="copyright">
-            <p>© 2024 Generación Farma SRL. Todos los derechos reservados.</p>
+            <small>© 2024 Generación Farma SRL.</small>
+            <br>
+            <small>Todos los derechos reservados.</small>
+            <br>
+            <small><a href="#">Términos y condiciones</a></small>
         </div>
-        <div class="terms">
-            <p><a href="#">Términos y Condiciones</a></p>
-        </div>
-        <div class="footer-content">
-            <div class="social-icons">
-                <p>Nuestras redes sociales</p>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
+        
+        <div class="social-icons">
+            <small>Nuestras redes sociales</small><br>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
         </div>
     </footer>
 </body>

@@ -1,8 +1,19 @@
-
-
 footer {
     text-align: center;
-    background-color: #706969;
-    padding: 20px;
-    border-color: aqua;
+    /* background-color: var(--color-fondo-8); */
+    /* border-color: aqua; */
+    color: hwb(0 92% 8%);
+}
+
+.social-icons {
+    padding: 1rem;
+}
+.social-icons small,
+.social-icons i {
+    /* margin: 1rem; */
+    padding: 0.25rem;
+    padding-top: 0.5rem;
+    color: hwb(0 92% 8%);
+    /* margin-bottom: 1rem; */
+    /* padding-bottom: 1rem; */
 }
