@@ -36,17 +36,18 @@
     </header>
     
 
-    <h2>Somos tu Farmacia de Confianza</h2>
-    <form  action="" method="post">
+    <div class="titulo">
+        <h2>Somos tu Farmacia de Confianza</h2>
+</div>
+    <form class="formulario"  action="" method="post">
         <h2>Formulario de Contacto</h2>
-        <br>
         <div class="form_input">
             <label>Nombre Completo</label>
             <input type="text" name= "user" placeholder="Juan Perez">
         </div>
         
-        <div>
-            <label for="appt">Fecha de Nacimineto:</label>
+        <div  class="form_input">
+            <label for="appt">Fecha de Nacimiento:</label>
             <input type="datetime-local" id="appt" name="appt"  
             value="2024-06-12T19:30"
             min="2024-06-07T00:00"
@@ -78,9 +79,10 @@
                 <input type="checkbox"  class="checkbox">
             </label>
         </div>
-    
+        <div class="buttons">
         <button type="submit">Enviar</button>
         <button type="reset">Borrar</button>
+    </div>
     </form>
     </main>
 
