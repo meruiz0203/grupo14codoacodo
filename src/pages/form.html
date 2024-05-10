@@ -39,11 +39,11 @@
     <div class="titulo">
         <h2>Somos tu Farmacia de Confianza</h2>
 </div>
-    <form class="formulario"  action="" method="post">
+    <form class="formulario" id="formulario">
         <h2>Formulario de Contacto</h2>
         <div class="form_input">
             <label>Nombre Completo</label>
-            <input type="text" name= "user" placeholder="Juan Perez">
+            <input type="text" name= "user" placeholder="Juan Perez" id="user">
         </div>
         
         <div  class="form_input">
@@ -56,7 +56,7 @@
     
         <div class="form_input">
             <label>Email</label>
-            <input type="email"  name="email" placeholder=" jperez@email.com">
+            <input type="email"  name="email" placeholder=" jperez@email.com" id="email">
         </div>
     
         <div class="form_input">
@@ -71,7 +71,7 @@
     
         <div class="form_input">
             <label>Mensaje</label>
-            <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
+            <textarea rows="8" placeholder="Deja tu mensaje" id="mensaje"></textarea>
         </div>
     
         <div class="form_input">
@@ -80,7 +80,7 @@
             </label>
         </div>
         <div class="buttons">
-        <button type="submit">Enviar</button>
+        <button type="submit" id="btn-enviar">Enviar</button>
         <button type="reset">Borrar</button>
     </div>
     </form>
@@ -105,5 +105,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="../js/form.js" />
 </body>
 </html>
