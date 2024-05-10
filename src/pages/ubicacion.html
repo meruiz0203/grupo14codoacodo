@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,14 @@
     <!-- FontAwesome Free 5.15.4-->
     <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img 
-                src="/src/img/logoCompleto.jpg" 
-                alt="logo"
-            />
+            <img src="/src/img/logoCompleto.jpg" alt="logo" />
         </div>
         <form class="search-form" action="/buscar" method="get">
-            <input 
-                type="search" 
-                name="q" 
-                placeholder="Escribe aqui que producto buscas..."
-            >
+            <input type="search" name="q" placeholder="Escribe aqui que producto buscas...">
             <button type="submit">Buscar</button>
         </form>
         <nav>
@@ -36,27 +31,20 @@
     </header>
 
     <main>
-        <h2>Somos tu Farmacia de Confianza</h2>
-        <p>Donde Estamos</p>
-
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3350.0958344337255!2d-68.81796382353532!3d-32.89563436931536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDUzJzQ0LjMiUyA2OMKwNDgnNTUuNCJX!5e0!3m2!1ses!2sar!4v1714585283300!5m2!1ses!2sar" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
+        <div class="titulo">
+            <h2>Somos tu Farmacia de Confianza</h2>
+            <p>Dónde Estamos</p>
+        </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3350.0958344337255!2d-68.81796382353532!3d-32.89563436931536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDUzJzQ0LjMiUyA2OMKwNDgnNTUuNCJX!5e0!3m2!1ses!2sar!4v1714585283300!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe></div>
+        <!--  <iframe src="https://www.google.com/maps/@-32.8890192,-68.8228081,15z?authuser=0&entry=ttu" width="400"
+            height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <iframe 
-            src="https://www.google.com/maps/@-32.8890192,-68.8228081,15z?authuser=0&entry=ttu" 
-            width="400" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        </iframe> -->
     </main>
 
     <footer>
@@ -79,4 +67,5 @@
         </div>
     </footer>
 </body>
+
 </html>

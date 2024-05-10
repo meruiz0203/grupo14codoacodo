@@ -3,6 +3,7 @@
 @import "footer.css";
 @import "form.css";
 @import url(main.css);
+@import url(mapa.css);
 
 /* 
 body{
@@ -64,3 +65,4 @@ header{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+

@@ -1,3 +1,8 @@
+.titulo{
+  padding: 1.5rem;
+  text-align: center; 
+}
+
 .contenedor {
   width: 100%;
   height: auto;
@@ -26,4 +31,11 @@
   100% {
     transform: translateX(calc(-250px * 12));
   }
+}
+
+
+@media only screen and (max-device-width: 768px){
+.contenedor .imagenes {
+  width: 200px;
+}
 }
