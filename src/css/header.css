@@ -10,7 +10,7 @@ header {
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
   display: block;
   border-radius: 10%;
@@ -20,13 +20,13 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .search-form button {
-  padding: 6px 20px;
+  padding: 5px 15px;
   font-size: 14px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-right: 10px;
   border-radius: 5px;
 }
@@ -42,7 +42,7 @@ nav {
   float: right;
   position: relative;
   bottom: 0;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-right: 20px;
 }
 
@@ -62,7 +62,7 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-  line-height: 1.4;
+  line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   font-size: 14px;
