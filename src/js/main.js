@@ -34,6 +34,7 @@ switch (diaSemana) {
     contenedorImagenes.querySelector("#bucal").appendChild(imagen20);
     break;
   case 6: // Sábado
+  contenedorImagenes.querySelector("#pasta").appendChild(imagen40);
     break;
   default:
     break;
