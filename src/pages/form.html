@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
+
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Farmacia "Nombre"</title>
 
     <!-- FontAwesome Free 5.15.4-->
     <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img 
-                src="/src/img/logoCompleto.jpg" 
-                alt="logo"
-            />
+            <img src="/src/img/logoCompleto.jpg" alt="logo" />
         </div>
         <form class="search-form" action="/buscar" method="get">
-            <input 
-                type="search" 
-                name="q" 
-                placeholder="Escribe aqui que producto buscas..."
-            >
+            <input type="search" name="q" placeholder="Escribe aqui que producto buscas...">
             <button type="submit">Buscar</button>
         </form>
         <nav>
@@ -34,53 +31,53 @@
             </ul>
         </nav>
     </header>
-    
 
-    <h2>Somos tu Farmacia de Confianza</h2>
-    <form  action="" method="post">
+
+    <div class="titulo">
+        <h2>Somos tu Farmacia de Confianza</h2>
+    </div>
+    <form class="formulario" id="formulario">
         <h2>Formulario de Contacto</h2>
-        <br>
         <div class="form_input">
             <label>Nombre Completo</label>
-            <input type="text" name= "user" placeholder="Juan Perez">
+            <input type="text" name="user" placeholder="Juan Perez" id="user">
         </div>
-        
-        <div>
-            <label for="appt">Fecha de Nacimineto:</label>
-            <input type="datetime-local" id="appt" name="appt"  
-            value="2024-06-12T19:30"
-            min="2024-06-07T00:00"
-            max="2024-06-14T00:00"  required />
+
+        <div class="form_input">
+            <label for="appt">Fecha de Nacimiento:</label>
+            <input type="datetime-local" id="appt" name="appt" value="2024-06-12T19:30" min="2024-06-07T00:00"
+                max="2024-06-14T00:00" required />
         </div>
-    
+
         <div class="form_input">
             <label>Email</label>
-            <input type="email"  name="email" placeholder=" jperez@email.com">
+            <input type="email" name="email" placeholder=" jperez@email.com" id="email">
         </div>
-    
+
         <div class="form_input">
             <label>Tipo de Usuario
-            <select name="type-of-user">
-                <option value="user1">Obra Social</option>
-                <option value="user2">Particular</option>
-                <option value="user3">Otro</option>
-            </select>
+                <select name="type-of-user">
+                    <option value="user1">Obra Social</option>
+                    <option value="user2">Particular</option>
+                    <option value="user3">Otro</option>
+                </select>
             </label>
         </div>
-    
+
         <div class="form_input">
             <label>Mensaje</label>
-            <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
+            <textarea rows="8" placeholder="Deja tu mensaje" id="mensaje"></textarea>
         </div>
-    
+
         <div class="form_input">
             <label for="">Acepto los Terminos y Condiciones
-                <input type="checkbox"  class="checkbox">
+                <input type="checkbox" class="checkbox">
             </label>
         </div>
-    
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+        <div class="buttons">
+            <button type="submit" id="btn-enviar">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
     </form>
     </main>
 
@@ -103,5 +100,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="../js/form.js" ></script>
 </body>
+
 </html>
