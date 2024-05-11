@@ -13,15 +13,38 @@
   display: flex;
   animation: carrusel 40s linear infinite;
   width: calc(250px * 24);
-  gap: 1.5em;
-}
 
-.contenedor .imagenes {
+  gap: 1em;
+  
+}
+.imagenes {
   width: 250px;
+  position: relative;
 }
 
 .contenedor .imagenes img {
   width: 100%;
+  
+}
+
+.promo1 {
+  position: absolute;
+  max-width: 30%;
+  top: 10px;
+  left: 20px;
+}
+
+.promo2 {
+  position: absolute;
+  max-width: 30%;
+  top: 10px;
+  left: 20px;
+}
+.promo1:hover{
+  scale: 1.2;
+}
+.promo2:hover {
+  scale: 1.2;
 }
 
 @keyframes carrusel {
@@ -32,7 +55,6 @@
     transform: translateX(calc(-250px * 12));
   }
 }
-
 
 @media only screen and (max-device-width: 768px){
 .contenedor .imagenes {
