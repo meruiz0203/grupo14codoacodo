@@ -1,0 +1,44 @@
+.titulo{
+  padding: .5rem;
+  text-align: center; 
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.contenedorImagenes {
+  display: flex;
+  animation: carrusel 40s linear infinite;
+  width: calc(250px * 24);
+  gap: 1.5em;
+}
+
+.contenedor .imagenes {
+  width: 250px;
+}
+
+.contenedor .imagenes img {
+  width: 100%;
+}
+main p {
+  color: white;
+}
+
+@keyframes carrusel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 12));
+  }
+}
+
+
+@media only screen and (max-device-width: 768px){
+.contenedor .imagenes {
+  width: 200px;
+}
+}

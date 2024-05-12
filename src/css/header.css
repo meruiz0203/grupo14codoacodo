@@ -1,60 +1,111 @@
+/* header {
+  position: relative;
+  background-color: rgba(255, 165, 0, 0.5);
+  overflow: hidden;
+  padding: 5px;
+} */
 
 .logo {
-    float: left;
+  float: left;
 }
 
 .logo img {
-    width: 100px;
-    height: auto;
-    display: block;
-    border-radius: 10%;
+  width: 80px;
+  height: auto;
+  display: block;
+  border-radius: 10%;
 }
 
-
-header .search-form {
-    text-align: center;
-    margin-top: 10px;
-  
+.search-form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
 }
 
-header .search-form button {
-    padding: 6px 20px; 
-    font-size: 14px; 
-    margin-left: 20px; 
-    margin-right: 10px;
-    border-radius: 5px;
+.search-form button {
+  padding: 5px 15px;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
+nav a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
 
 nav {
-    float: right; 
-    position: relative;
-    bottom: 0;
-    margin-top: 10px;
+  float: right;
+  position: relative;
+  bottom: 0;
+  margin-top: 15px;
+  margin-right: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 10px; 
+  display: inline-block;
+  margin-left: 10px;
 }
 
 nav ul li:first-child {
-    margin-left: 0; 
+  margin-left: 0;
 }
 
 nav ul li a {
-    line-height: 1.4;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 6px 8px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 8px;
 }
 
+@media only screen and (max-device-width: 768px) {
+  .search-form button {
+    padding: 3px 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+
+  nav {
+    float: left;
+    padding: 0;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .search-form button,
+  .search-form {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    margin-bottom: 5px;
+  }
+
+  nav {
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0;
+  }
+}

@@ -3,6 +3,11 @@
 @import "footer.css";
 @import "form.css";
 
+@import url(main.css);
+@import url(mapa.css);
+
+
+
 :root {
     --color-primario: #007bff; /* Azul */
     --color-secundario: #6c757d; /* Gris */
@@ -67,11 +72,17 @@ body > footer {
 
 header {
     background-color: var(--background-color-1);
+    backdrop-filter: blur(10px); 
 }
 
 footer {
     background-color: var(--background-color-4);
+    backdrop-filter: blur(10px); 
 }
+
+
+
+
 
 @keyframes miAnimacion {
     0% {
@@ -96,3 +107,4 @@ footer {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
