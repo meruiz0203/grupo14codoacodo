@@ -29,17 +29,21 @@
     --background-color-3: hwb(180 0% 40% / 0.65);
     --background-color-4: hwb(180 0% 70% / 0.9);
     --background-main: hwb(0 100% 0% / 0.25);
+    --header-max-height: 5rem;
+    --header-padding: 1.5rem;
+
   }
 
 body {
     margin: 0;
     width: 100%;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: scroll;
 }
 
 body {
-    height: 100vh;
     display: grid;
+    overflow: scroll;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -50,37 +54,46 @@ body {
 
 body > header {
     grid-area: header;
-    overflow: hidden;
-    padding: 1.2rem;
+    position: fixed;
+    max-height: var(--header-max-height);
+    width: 100%;
+    z-index: 1000;
+
 }
 
 body > main {
     grid-area: main;
+    margin-top: calc(var(--header-max-height) + var(--header-padding)*2);
     overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 1.2rem;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: var(--background-main);
+    overflow-y: auto;
+
 }
 
 body > footer {
     grid-area: footer;
-    overflow: hidden;
-    padding: 1.2rem;
 }
 
-header {
+
+
+body > header {
+    padding: var(--header-padding);
     background-color: var(--background-color-1);
     backdrop-filter: blur(10px);
 }
 
-footer {
+body > main {
+    padding: 1.2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--background-main);
+    backdrop-filter: blur(5px);
+}
+
+body > footer {
+    padding: 1.2rem;
     background-color: var(--background-color-4);
     backdrop-filter: blur(10px); 
 }
-
-
 
 
 
