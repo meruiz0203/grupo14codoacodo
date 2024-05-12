@@ -1,9 +1,15 @@
-
-
 footer {
     width: auto;
     text-align: center;
-    background-color: #706969;
-    padding: 20px;
-    border-color: aqua;
+    color: hwb(0 92% 8%);
+}
+
+.social-icons {
+    padding: 0.2rem;
+}
+.social-icons small,
+.social-icons i {
+    padding: 0.25rem;
+    padding-top: 0.5rem;
+    color: hwb(0 92% 8%);
 }

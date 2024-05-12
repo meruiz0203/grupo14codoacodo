@@ -1,9 +1,12 @@
-@import "header.css";
 @import "body.css";
+@import "header.css";
 @import "footer.css";
 @import "form.css";
+
 @import url(main.css);
 @import url(mapa.css);
+
+
 
 :root {
     --color-primario: #007bff; /* Azul */
@@ -19,7 +22,8 @@
     --color-fondo-7: #000098;
     --color-fondo-8: #4c4c4c;
     --color-fondo-9: rgba(0, 152, 114, 0.5);
-    --color-control: #eaffea;
+    --color-control-1: #eaffea;
+    --color-control-2: hsla(0, 0%, 100%, 0.65);
     --background-color-1: hwb(180 0% 40% / 0.65);
     --background-color-2: hsla(240, 100%, 30%, 0.80);
     --background-color-3: hwb(180 0% 40% / 0.65);
@@ -27,24 +31,80 @@
     --background-main: hwb(0 100% 0% / 0.25);
   }
 
+body {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: auto;
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+body > header {
+    grid-area: header;
+    overflow: hidden;
+    padding: 0.6rem;
+}
+
+body > main {
+    grid-area: main;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.6rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--background-main);
+}
+
+body > footer {
+    grid-area: footer;
+    overflow: hidden;
+    padding: 0.6rem;
+}
+
 header {
     background-color: var(--background-color-1);
+    backdrop-filter: blur(10px);
 }
 
 footer {
     background-color: var(--background-color-4);
+    backdrop-filter: blur(10px); 
 }
+
+
+
+
 
 @keyframes miAnimacion {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.2); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.logo{
+.logo {
     animation-name: miAnimacion;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-

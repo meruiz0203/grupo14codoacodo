@@ -5,75 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
-
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Farmacia "Nombre"</title>
+    <title>Generación Farma</title>
+    
+    <!-- Bootstrap 5.3.3 -->
+    <!--
+    <link href="../vendor/bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../vendor/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    -->
 
     <!-- FontAwesome Free 5.15.4-->
     <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="/src/img/logoCompleto.jpg" alt="logo" />
+            <img 
+                src="../img/logoCompleto.jpg" 
+                alt="logo"
+            />
+            <h2>Generación Farma</h2>
         </div>
-        <form class="search-form" action="/buscar" method="get">
-            <input type="search" name="q" placeholder="Escribe aqui que producto buscas...">
-            <button type="submit">Buscar</button>
+        <form 
+            class="search-form" 
+            action="#" 
+            method="get"
+            >
+            <input
+                type="search" 
+                name="q" 
+                placeholder="Buscar Producto"
+            >
+            <button 
+                type="submit"
+                >
+                Buscar
+            </button>
         </form>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/src/pages/product.html">Productos</a></li>
-                <li><a href="/src/pages/form.html">Contactanos</a></li>
-                <li><a href="/src/pages/ubicacion.html">Donde Estamos</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./product.html">Productos</a></li>
+                <li><a href="./form.html">Contactanos</a></li>
+                <li><a href="./ubicacion.html">Dónde Estamos</a></li>
             </ul>
         </nav>
     </header>
-
-
-    <div class="titulo">
-        <h2>Somos tu Farmacia de Confianza</h2>
-    </div>
-    <form class="formulario" id="formulario">
-        <h2>Formulario de Contacto</h2>
-        <div class="form_input">
-            <label>Nombre Completo</label>
-            <input type="text" name="user" placeholder="Juan Perez" id="user">
-        </div>
-
-        <div class="form_input">
-            <label for="appt">Fecha de Nacimiento:</label>
-            <input type="datetime-local" id="appt" name="appt" value="2024-06-12T19:30" min="2024-06-07T00:00"
-                max="2024-06-14T00:00" required />
-        </div>
-
-        <div class="form_input">
-            <label>Email</label>
-            <input type="email" name="email" placeholder=" jperez@email.com" id="email">
-        </div>
-
-        <div class="form_input">
-            <label>Tipo de Usuario
-                <select name="type-of-user">
-                    <option value="user1">Obra Social</option>
-                    <option value="user2">Particular</option>
-                    <option value="user3">Otro</option>
+    
+    <main>
+        <!-- <h2>Somos tu Farmacia de Confianza</h2> -->
+        <form 
+            id="id_contacto"
+            action="" 
+            method="post"
+            >
+            <h2>Formulario de contacto</h2>
+            <div class="form-input mt-5">
+                <label>Nombre completo</label>
+                <input 
+                    type="text"
+                    name="user"
+                    id="user"
+                    placeholder="Nombre completo">
+            </div>
+            
+            <div class="form-input">
+                <label for="appt">Fecha de nacimiento</label>
+                <input 
+                    id="appt" 
+                    name="appt"  
+                    type="datetime-local" 
+                    value="2024-06-12T19:30"
+                    min="2024-06-07T00:00"
+                    max="2024-06-14T00:00"  
+                    required
+                />
+            </div>
+        
+            <div class="form-input">
+                <label>Correo electrónico</label>
+                <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Correo electrónico"
+                >
+            </div>
+        
+            <div class="form-input">
+                <label>Tipo de atención</label>
+                <select 
+                    name="type-of-user"
+                    >
+                    <option value="1">Obra Social</option>
+                    <option value="2">Particular</option>
+                    <option value="3">Otro</option>
                 </select>
-            </label>
-        </div>
-
-        <div class="form_input">
-            <label>Mensaje</label>
-            <textarea rows="8" placeholder="Deja tu mensaje" id="mensaje"></textarea>
-        </div>
-
-        <div class="form_input">
-            <label for="">Acepto los Terminos y Condiciones
-                <input type="checkbox" class="checkbox">
-            </label>
-        </div>
+            </div>
+        
+            <div class="form-input">
+                <label>Mensaje</label>
+                <textarea rows="8" id="mensaje" placeholder="Deja tu mensaje"></textarea>
+            </div>
+        
+            <div class="form-input">
+                <label for="">Acepto los Términos y Condiciones</label>
+                <input type="checkbox"  class="checkbox">
+            </div>
         <div class="buttons">
             <button type="submit" id="btn-enviar">Enviar</button>
             <button type="reset">Borrar</button>
@@ -83,21 +124,19 @@
 
     <footer>
         <div class="copyright">
-            <p>© 2024 Generación Farma SRL. Todos los derechos reservados.</p>
+            <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
+            <br>
+            <small><a href="#">Términos y condiciones</a></small>
         </div>
-        <div class="terms">
-            <p><a href="#">Términos y Condiciones</a></p>
-        </div>
-        <div class="footer-content">
-            <div class="social-icons">
-                <p>Nuestras redes sociales</p>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+        
+        <div class="social-icons">
+            <small>Nuestras redes sociales</small><br>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
         </div>
     </footer>
     <script type="text/javascript" src="../js/form.js" ></script>
