@@ -1,8 +1,6 @@
 footer {
     width: auto;
     text-align: center;
-    /* background-color: var(--color-fondo-8); */
-    /* border-color: aqua; */
     color: hwb(0 92% 8%);
 }
 
@@ -11,10 +9,7 @@ footer {
 }
 .social-icons small,
 .social-icons i {
-    /* margin: 1rem; */
     padding: 0.25rem;
     padding-top: 0.5rem;
     color: hwb(0 92% 8%);
-    /* margin-bottom: 1rem; */
-    /* padding-bottom: 1rem; */
 }

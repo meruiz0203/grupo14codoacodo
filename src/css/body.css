@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url("../img/imag-farm.jpg");
+  backdrop-filter: blur(5px);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
