@@ -95,6 +95,18 @@ body > footer {
     backdrop-filter: blur(10px); 
 }
 
+@media only screen and (max-device-width: 768px) {
+    body > main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    body > main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 
 
 @keyframes miAnimacion {
@@ -120,4 +132,6 @@ body > footer {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
+
 

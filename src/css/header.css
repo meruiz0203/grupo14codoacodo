@@ -1,23 +1,26 @@
 .logo {
   float: left;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .logo img {
   width: 80px;
+  margin-right: 20px;
   height: auto;
   display: block;
   border-radius: 10%;
 }
 
 .search-form {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+  left: 100px;
   margin-top: 10px;
 }
 
-.search-form input{
-  width: auto;
+.search-form input {
+  width: 300px;
   box-sizing: border-box;
   padding: 0.5rem;
   border: none;
@@ -77,6 +80,10 @@ nav ul li a {
 }
 
 @media only screen and (max-device-width: 768px) {
+  .search-form {
+    display: flex;
+    margin-top: 20px;
+  }
   .search-form button {
     padding: 3px 10px;
     font-size: 10px;
@@ -86,10 +93,7 @@ nav ul li a {
   }
 
   nav {
-    float: left;
     padding: 0;
-    margin-left: 3rem;
-    margin-top: 2rem;
   }
 }
 
@@ -104,7 +108,13 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     float: none;
-    margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 50px;
   }
 
   nav {
@@ -112,6 +122,6 @@ nav ul li a {
     text-align: center;
     flex-wrap: wrap;
     padding: 0;
-    margin: 10px 0;
+    margin-top: 0;
   }
 }
