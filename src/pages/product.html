@@ -3,30 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Farmacia "Nombre"</title>
+    <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
+    
+    <title>Generación Farma</title>
+
+    <!-- Bootstrap 5.3.3 -->
+    <!--
+    <link href="../vendor/bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../vendor/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    -->
 
     <!-- FontAwesome Free 5.15.4-->
     <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="../css/style.css">    
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="/src/img/logoCompleto.jpg" alt="logo" />
+            <img src="../img/logoCompleto.jpg" alt="logo" />
+            <h2>Generación Farma</h2>
         </div>
-        <form class="search-form" action="/buscar" method="get">
-            <input type="search" name="q" placeholder="Escribe aqui que producto buscas...">
-            <button type="submit">Buscar</button>
+        <form 
+            class="search-form" 
+            action="#" 
+            method="get"
+            >
+            <input 
+                type="search" 
+                name="q" 
+                placeholder="Buscar producto"
+            >
+            <button 
+                type="submit"
+                >
+                Buscar
+            </button>
         </form>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/src/pages/product.html">Productos</a></li>
-                <li><a href="/src/pages/form.html">Contactanos</a></li>
-                <li><a href="/src/pages/ubicacion.html">Donde Estamos</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./product.html">Productos</a></li>
+                <li><a href="./form.html">Contactanos</a></li>
+                <li><a href="./ubicacion.html">Dónde Estamos</a></li>
             </ul>
         </nav>
     </header>
@@ -43,11 +65,11 @@
                 </div>
                 <div class="imagenes"><a href="../img/7509546061689.jpg"><img src="../img/7509546686042.jpg"
                             alt="" /></a></div>
-                <div class="imagenes"><a href="src/img/7509546690285.jpg"><img src="../img/7509546690285.jpg"
+                <div class="imagenes"><a href="../img/7509546690285.jpg"><img src="../img/7509546690285.jpg"
                             alt="" /></a></div>
-                <div class="imagenes"><a href="src/img/7509552902358.jpg"><img src="../img/7509552902358.jpg"
+                <div class="imagenes"><a href="../img/7509552902358.jpg"><img src="../img/7509552902358.jpg"
                             alt="" /></a></div>
-                <div class="imagenes"><a href="src/img/7791293050119.jpg"><img src="../img/7791293050119.jpg"
+                <div class="imagenes"><a href="../img/7791293050119.jpg"><img src="../img/7791293050119.jpg"
                             alt="" /></a></div>
                 <div class="imagenes"><a href="../img/7791984000065.jpg"><img src="../img/7791984000065.jpg"
                             alt="" /></a></div>
@@ -91,23 +113,21 @@
 
     </main>
 
-    <footer>
+  <footer>
         <div class="copyright">
-            <p>© 2024 Generación Farma SRL. Todos los derechos reservados.</p>
+            <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
+            <br>
+            <small><a href="#">Términos y condiciones</a></small>
         </div>
-        <div class="terms">
-            <p><a href="#">Términos y Condiciones</a></p>
-        </div>
-        <div class="footer-content">
-            <div class="social-icons">
-                <p>Nuestras redes sociales</p>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+        
+        <div class="social-icons">
+            <small>Nuestras redes sociales</small><br>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
         </div>
     </footer>
 </body>

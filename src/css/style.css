@@ -1,65 +1,132 @@
-@import "header.css";
 @import "body.css";
+@import "header.css";
 @import "footer.css";
 @import "form.css";
+
 @import url(main.css);
 @import url(mapa.css);
 
-/* 
-body{
+
+
+:root {
+    --color-primario: #007bff; /* Azul */
+    --color-secundario: #6c757d; /* Gris */
+    --color-fondo: #f8f9fa; /* Gris claro */
+    --color-texto: #000800;
+    --color-fondo-1: #007298;
+    --color-fondo-2: #009897;
+    --color-fondo-3: #009871;
+    --color-fondo-4: #00984b;
+    --color-fondo-5: #009825;
+    --color-fondo-6: #019800; /* Color de la cruz verde */
+    --color-fondo-7: #000098;
+    --color-fondo-8: #4c4c4c;
+    --color-fondo-9: rgba(0, 152, 114, 0.5);
+    --color-control-1: #eaffea;
+    --color-control-2: hsla(0, 0%, 100%, 0.65);
+    --background-color-1: hwb(180 0% 40% / 0.65);
+    --background-color-2: hsla(240, 100%, 30%, 0.80);
+    --background-color-3: hwb(180 0% 40% / 0.65);
+    --background-color-4: hwb(180 0% 70% / 0.9);
+    --background-main: hwb(0 100% 0% / 0.25);
+    --header-max-height: 5rem;
+    --header-padding: 1.5rem;
+
+  }
+
+body {
     margin: 0;
-    padding: 0;
-    height: 100svh;
-} 
-*/
+    width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+}
 
-/* 
-.container-grid{
+body {
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: repeat(3,1fr);
+    overflow: scroll;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        ". h h"
-        "m m ."
-        "f f f"
-        ;
-} 
-*/
-
-/*
-header{
-    grid-area: h;
-    border: 1px solid black;
-    height: 10%;
+        'header'
+        'main'
+        'footer';
 }
 
-main{
-    grid-area: m;
-    border: 1px solid black;
-    height: 80%;
+body > header {
+    grid-area: header;
+    position: fixed;
+    max-height: var(--header-max-height);
+    width: 100%;
+    z-index: 1000;
+
 }
 
-footer{
-    grid-area: f;
-    border: 1px solid black;
-    height: 10%;
-} 
-*/
+body > main {
+    grid-area: main;
+    margin-top: calc(var(--header-max-height) + var(--header-padding)*2);
+    overflow-x: hidden;
+    overflow-y: auto;
 
-/* 
-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} 
-*/
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+
+
+body > header {
+    padding: var(--header-padding);
+    background-color: var(--background-color-1);
+    backdrop-filter: blur(10px);
+}
+
+body > main {
+    padding: 1.2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--background-main);
+    backdrop-filter: blur(5px);
+}
+
+body > footer {
+    padding: 1.2rem;
+    background-color: var(--background-color-4);
+    backdrop-filter: blur(10px); 
+}
+
+@media only screen and (max-device-width: 768px) {
+    body > main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    body > main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
 @keyframes miAnimacion {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.2); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.logo{
+.logo {
     animation-name: miAnimacion;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;

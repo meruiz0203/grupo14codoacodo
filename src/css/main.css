@@ -1,5 +1,5 @@
 .titulo{
-  padding: 1.5rem;
+  padding: .5rem;
   text-align: center; 
 }
 
@@ -45,6 +45,9 @@
 }
 .promo2:hover {
   scale: 1.2;
+}
+main p {
+  color: white;
 }
 
 @keyframes carrusel {
