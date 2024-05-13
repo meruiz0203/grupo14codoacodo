@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
-    <title>Farmacia "Nombre"</title>
+    <title>Generación Farma</title>
     
     <!-- Bootstrap 5.3.3 -->
     <!--
@@ -27,6 +27,7 @@
                 src="../img/logoCompleto.jpg" 
                 alt="logo"
             />
+            <h2>Generación Farma</h2>
         </div>
         <form 
             class="search-form" 
@@ -36,7 +37,7 @@
             <input
                 type="search" 
                 name="q" 
-                placeholder="Buscar producto"
+                placeholder="Buscar Producto"
             >
             <button 
                 type="submit"
@@ -62,14 +63,12 @@
             method="post"
             >
             <h2>Formulario de contacto</h2>
-
-            <br>
-
             <div class="form-input mt-5">
                 <label>Nombre completo</label>
                 <input 
                     type="text"
-                    name= "user"
+                    name="user"
+                    id="user"
                     placeholder="Nombre completo">
             </div>
             
@@ -91,6 +90,7 @@
                 <input 
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Correo electrónico"
                 >
             </div>
@@ -108,24 +108,22 @@
         
             <div class="form-input">
                 <label>Mensaje</label>
-                <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
+                <textarea rows="8" id="mensaje" placeholder="Deja tu mensaje"></textarea>
             </div>
         
             <div class="form-input">
                 <label for="">Acepto los Términos y Condiciones</label>
                 <input type="checkbox"  class="checkbox">
             </div>
-        
-            <button type="submit">Enviar</button>
+        <div class="buttons">
+            <button type="submit" id="btn-enviar">Enviar</button>
             <button type="reset">Borrar</button>
         </form>
     </main>
 
     <footer>
         <div class="copyright">
-            <small>© 2024 Generación Farma SRL.</small>
-            <br>
-            <small>Todos los derechos reservados.</small>
+            <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
             <br>
             <small><a href="#">Términos y condiciones</a></small>
         </div>
@@ -140,6 +138,7 @@
             </a>
         </div>
     </footer>
+    
     <script type="text/javascript" src="../js/form.js" ></script>
 </body>
 

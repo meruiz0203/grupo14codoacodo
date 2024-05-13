@@ -3,10 +3,14 @@
   display: flex;
   margin-left: 20px;
   margin-top: 10px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .logo img {
   width: 80px;
+  margin-right: 20px;
   margin-right: 20px;
   height: auto;
   display: block;
@@ -14,6 +18,8 @@
 }
 
 .search-form {
+  position: relative;
+  left: 100px;
   position: relative;
   left: 100px;
   margin-top: 10px;
@@ -33,6 +39,7 @@
 
 .search-form button {
   padding: 5px 15px;
+  height: auto;
   height: auto;
   font-size: 14px;
   margin-left: 15px;
