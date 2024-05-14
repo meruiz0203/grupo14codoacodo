@@ -23,6 +23,9 @@
 
 > Soy Eugenia Ruiz, tengo 43 años, soy de Mendoza, hace dos años vengo preparandome en el mundo de la programacion, para poder dedicarme a la actividad. Soy Lic en Hig & Seg y tambien Enfermera Profesional, trabajo en el rubro de actividad Petrolera. Me gusta y llama mi atencion la logica de la programacion.
 
+
+> Alexis Jankowicz, tengo 46 años, soy de Capital Federal, actualmente trabajo como administrativo en un area del Gobierno de la Ciudad; soy recibido del secundario como Tecnico en Informatica y por cuestiones personales como laborales me alejaron del rubro, al ser autodidacta me volvi a sumergir en el mundo digital para ampliar mis conocimiento y en algun momento proyectarlos como salida laboral
+
 ---
 
 ### __PROYECTO: GENERACIÓN FARMA SRL__
