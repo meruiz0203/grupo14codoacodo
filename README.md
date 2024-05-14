@@ -1,7 +1,51 @@
-Presentacion de cada uno de los integrantes de equipo.
+###### Codo a Codo
+###### Programación Full Stack Python
+#### Trabajo Práctico Obligatorio
+### **Desarrollo Web HTML, CSS y JavaScript**
 
-Soy Eugenia Ruiz, tengo 43 años, soy de Mendoza, hace dos años vengo preparandome en el mundo de la programacion, para poder dedicarme a la actividad. Soy Lic en Hig & Seg y tambien Enfermera Profesional, trabajo en el rubro de actividad Petrolera. Me gusta y llama mi atencion la logica de la programacion.
+---
 
-Breve descripcion de la pagina web
+#### GRUPO 14
 
-Nuestra web trata sobre una Famacia, que por medio de una página en la web busca posicionarse en el mercado, poder visualizar datos de interés como quienes somos, donde estamos ubicados, productos, promociones y ofertas, en un principio la única interaccion con el usuario será mediante un formulario donde nos brinde informacion y asi poder ir creando una base de datos de nuestra posible clientela, enviar mails o mensajes personalizados ofreciendo nuestros productos y servicios, hasta tanto tener los conocimientos necesarios para convertirlo en un ecomerce.
+###### Representante
+* Eugenia Ruiz
+
+###### Integrantes
+* Sebastián Basconcelo
+* Matías Nicolás Di Marco
+* Gerardo Matías Ferreira
+* Alexis Jankowicz
+* Eugenia Ruiz
+
+---
+
+###### __Presentación individual__
+
+> Soy Eugenia Ruiz, tengo 43 años, soy de Mendoza, hace dos años vengo preparandome en el mundo de la programacion, para poder dedicarme a la actividad. Soy Lic en Hig & Seg y tambien Enfermera Profesional, trabajo en el rubro de actividad Petrolera. Me gusta y llama mi atencion la logica de la programacion.
+
+---
+
+### __PROYECTO: GENERACIÓN FARMA SRL__
+
+###### Sitio web: [Generación Farma](https://warm-begonia-47e1a1.netlify.app/)
+###### Repositorio GitHub: [Enlace](https://github.com/meruiz0203/grupo14codoacodo)
+
+###### __Breve descripción__
+> Nuestro sitio web trata sobre una Farmacia, que busca posicionarse en el mercado, poder visualizar datos de interés como quiénes somos, dónde estamos ubicados, productos, promociones y ofertas. En un principio, la única interacción con el usuario será mediante un formulario donde nos haga consultas y así poder ir creando una base de datos de nuestra posible clientela, enviar correos electrónico o mensajes personalizados ofreciendo nuestros productos y servicios, hasta convertirlo en un punto de venta virtual.
+
+#### __Características del proyecto__
+
+##### Páginas del sitio
+- Página de inicio
+- Productos
+- Contacto
+- Ubicación
+
+##### Formulario de contacto
+Los siguientes campos son de entrada obligatoria.
+- Nombre completo del cliente (input de texto)
+- Fecha de nacimiento (input de fecha)
+- Correo electrónico (input de texto)
+- Tipo de atención obra social, particular, otro (lista de selección)
+- Consulta del usuario (input de texto)
+- Aceptación de Términos y Condiciones (checkbox)
