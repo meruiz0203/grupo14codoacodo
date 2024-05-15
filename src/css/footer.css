@@ -1,12 +1,11 @@
 footer {
-    width: auto;
-    height: auto;
+    /* width: auto; */
     text-align: center;
     color: hwb(0 92% 8%);
 }
 
 .social-icons {
-    padding: 0.2rem;
+    padding: 1rem;
 }
 .social-icons small,
 .social-icons i {
