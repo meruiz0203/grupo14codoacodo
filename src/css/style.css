@@ -102,6 +102,10 @@ body > footer {
     font-weight: 800;
 }
 
+.imagenes:hover{
+  transform: scale(1.05); 
+}
+
 @media only screen and (max-device-width: 768px) {
     body > main {
         padding-left: 10%;
