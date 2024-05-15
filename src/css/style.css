@@ -97,7 +97,9 @@ body > footer {
 
 .prod{
     text-align: center;
-    
+}
+#precio{
+    font-weight: 800;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -111,6 +113,11 @@ body > footer {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+.prod{
+    font-size: 12px;
+}
+
 }
 
 

@@ -30,7 +30,7 @@ var prodId = getParameterByName('prodId');
                 let div = document.createElement('div');
                 let img = document.createElement('img');
                 img.src = prod.src;
-                img.style.height = "300px"
+                img.style.height = "250px"
                 let alt = prod.alt;
                 let precio = prod.precio;
                 document.getElementById("pid").appendChild(img);
@@ -59,11 +59,11 @@ var prodId = getParameterByName('prodId');
 
 <body>
     <header>
-        <div class="logo">
-            <img 
+              <div class="logo">
+            <a href="../../index.html"><img 
                 src="../img/logoCompleto.jpg" 
                 alt="logo"
-            />
+            /></a>
             <h2>Generación Farma</h2>
         </div>
         <form 
@@ -95,10 +95,11 @@ var prodId = getParameterByName('prodId');
 
   <main>
     <div class="prod">
-    <h2>Producto</h2>
+    <h1 id="alt"></h1>
+    <span>Precio: </span><span id="precio"></span>
+    <br />
+    <br />
     <div id="pid"></div>
-    <p id="alt"></p>
-    <p id="precio"></p>
 </div>
 </main>
 </body>

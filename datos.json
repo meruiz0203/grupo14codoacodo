@@ -1,14 +1,14 @@
 [
-    { "id" : "1", "src": "../img/7509546061689.jpg", "alt": "cepillo colgate", "precio" : "$1000" },
-    { "id" : "2", "src": "../img/7509546686042.jpg", "alt": "pasta dental colgate", "precio" : "$1500" },
-    { "id" : "3", "src": "../img/7509552902358.jpg", "alt": "acondicionador elvive", "precio" : "$3000" },
-    { "id" : "4", "src": "../img/7791293050119.jpg", "alt": "shampoo treseme", "precio" : "$4000" },
-    { "id" : "5", "src": "../img/7791984000065.jpg", "alt": "gel intimo genella", "precio" : "$5000" },
-    { "id" : "6", "src": "../img/7791984000737.jpg", "alt": "gotas coltix", "precio" : "$7000" },
-    { "id" : "7", "src": "../img/7793742005534.jpg", "alt": "gel facial aveno", "precio" : "$10000" },
-    { "id" : "8", "src": "../img/7794626013973.jpg", "alt": "toallitas humedas huggi's", "precio" : "$3000" },
-    { "id" : "9", "src": "../img/7795323775348.jpg", "alt": "leche nutrilon", "precio" : "$11000" },
-    { "id" : "10", "src": "../img/7891024030813.jpg", "alt": "enjuague bucal colgate", "precio" : "$6000" },
-    { "id" : "11", "src": "../img/7796285289348.jpg", "alt": "espuma intima", "precio" : "$4500" }
+    { "id" : "1", "src": "../img/7509546061689.jpg", "alt": "Cepillo Colgate", "precio" : "$1000" },
+    { "id" : "2", "src": "../img/7509546686042.jpg", "alt": "Pasta Dental Colgate", "precio" : "$1500" },
+    { "id" : "3", "src": "../img/7509552902358.jpg", "alt": "Acondicionador Elvive", "precio" : "$3000" },
+    { "id" : "4", "src": "../img/7791293050119.jpg", "alt": "Shampoo Treseme", "precio" : "$4000" },
+    { "id" : "5", "src": "../img/7791984000065.jpg", "alt": "Gel Intimo Genella", "precio" : "$5000" },
+    { "id" : "6", "src": "../img/7791984000737.jpg", "alt": "Gotas Coltix", "precio" : "$7000" },
+    { "id" : "7", "src": "../img/7793742005534.jpg", "alt": "Gel Facial Aveno", "precio" : "$10000" },
+    { "id" : "8", "src": "../img/7794626013973.jpg", "alt": "Toallitas Humedas Huggie's", "precio" : "$3000" },
+    { "id" : "9", "src": "../img/7795323775348.jpg", "alt": "Leche Nutrilon", "precio" : "$11000" },
+    { "id" : "10", "src": "../img/7891024030813.jpg", "alt": "Enjuague Bucal Colgate", "precio" : "$6000" },
+    { "id" : "11", "src": "../img/7796285289348.jpg", "alt": "Espuma Intima", "precio" : "$4500" }
     ]
 
