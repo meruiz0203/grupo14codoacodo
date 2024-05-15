@@ -95,6 +95,11 @@ body > footer {
     backdrop-filter: blur(10px); 
 }
 
+.prod{
+    text-align: center;
+    
+}
+
 @media only screen and (max-device-width: 768px) {
     body > main {
         padding-left: 10%;

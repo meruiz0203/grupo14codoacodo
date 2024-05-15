@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+var prodId = getParameterByName('prodId');
+        function loadJson(url) {
+            return fetch(url)
+                .then(response => response.json())
+                .then(data => data.find((p) => p.id === prodId))
+        }
+
+        function loadProduct(name) {
+            return loadJson("../../datos.json");
+        }
+
+        function showProduct(prod) {
+            return new Promise(function (resolve, reject) {
+                let div = document.createElement('div');
+                let img = document.createElement('img');
+                img.src = prod.src;
+                img.style.height = "300px"
+                let alt = prod.alt;
+                let precio = prod.precio;
+                document.getElementById("pid").appendChild(img);
+                document.getElementById("alt").append(alt);
+                document.getElementById("precio").append(precio);
+
+                setTimeout(() => {
+                    resolve(prod);
+                },3000);
+            });
+        }
+
+        // Úsalos:
+        loadJson("../../datos.json")
+            .then(user => loadProduct(user.alt))
+            .then(showProduct)
+            .then(prod => prod.find((p) => p.id === uid));
+        // ...
+
+    </script>
+        <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="../css/style.css">  
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img 
+                src="../img/logoCompleto.jpg" 
+                alt="logo"
+            />
+            <h2>Generación Farma</h2>
+        </div>
+        <form 
+            class="search-form" 
+            action="#" 
+            method="get"
+            >
+            <input 
+                type="search"
+                name="q" 
+                placeholder="Buscar Producto"
+            >
+            <button 
+                type="submit"
+                >
+                Buscar
+            </button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./product.html">Productos</a></li>
+                <li><a href="./form.html">Contactanos</a></li>
+                <li><a href="./ubicacion.html">Dónde Estamos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+  <main>
+    <div class="prod">
+    <h2>Producto</h2>
+    <div id="pid"></div>
+    <p id="alt"></p>
+    <p id="precio"></p>
+</div>
+</main>
+</body>
+<footer>
+        <div class="copyright">
+            <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
+            <br>
+            <small><a href="#">Términos y condiciones</a></small>
+        </div>
+        
+        <div class="social-icons">
+            <small>Nuestras redes sociales</small><br>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+</html>
