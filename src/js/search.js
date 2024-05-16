@@ -20,6 +20,20 @@ button.addEventListener('click', async function () {
         h2_busqueda.innerHTML = "Resultados de la búsqueda: "
         div_busqueda.appendChild(h2_busqueda)
         for(let i=0;i<array.length;i++){
+            if(location.pathname === "/src/pages/product.html"){
+            let a = document.createElement("a")
+            a.href = `./product-detail.html?prodId=${array[i].id}`
+            let div = document.createElement("div")
+            let img = document.createElement("img")
+            img.style.height="150px"
+            img.src = "."+ array[i].src.slice(1)
+            div.style.float = "inline-start"
+            img.style.marginLeft = "15px"
+            a.appendChild(img)
+            div.appendChild(a)
+            div_busqueda.appendChild(div)                   
+            }
+            else{
             let a = document.createElement("a")
             a.href = `./src/pages/product-detail.html?prodId=${array[i].id}`
             let div = document.createElement("div")
@@ -31,9 +45,12 @@ button.addEventListener('click', async function () {
             a.appendChild(img)
             div.appendChild(a)
             div_busqueda.appendChild(div)   
+
+            }
                     
         }
     }
+    console.log(location)
     document.getElementById('search').value = ""
 })
 
