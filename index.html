@@ -37,10 +37,12 @@
             <input 
                 type="search"
                 name="q" 
+                id="search"
                 placeholder="Buscar Producto"
             >
             <button 
                 type="submit"
+                id="search-button"
                 >
                 Buscar
             </button>
@@ -57,7 +59,8 @@
     
 
   <main>
-    <div class="titulo">
+      <div id="busqueda"></div>
+    <div class="titulo" id="titulo">
       <h2>Somos tu Farmacia de Confianza</h2>
       <p>Recordá que hoy <span></span> encontrarás las promociones vigentes.</p>
 
@@ -121,5 +124,6 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/search.js"></script>
 </body>
 </html>

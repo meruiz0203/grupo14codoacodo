@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../img/favicon.ico" />
-    
+
     <title>Generación Farma</title>
     <script>
         function getParameterByName(name) {
@@ -14,7 +14,7 @@
                 results = regex.exec(location.search);
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
-var prodId = getParameterByName('prodId');
+        var prodId = getParameterByName('prodId');
         function loadJson(url) {
             return fetch(url)
                 .then(response => response.json())
@@ -39,7 +39,7 @@ var prodId = getParameterByName('prodId');
 
                 setTimeout(() => {
                     resolve(prod);
-                },3000);
+                }, 3000);
             });
         }
 
@@ -51,34 +51,21 @@ var prodId = getParameterByName('prodId');
         // ...
 
     </script>
-        <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom -->
-    <link rel="stylesheet" href="../css/style.css">  
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-              <div class="logo">
-            <a href="../../index.html"><img 
-                src="../img/logoCompleto.jpg" 
-                alt="logo"
-            /></a>
+        <div class="logo">
+            <a href="../../index.html"><img src="../img/logoCompleto.jpg" alt="logo" /></a>
             <h2>Generación Farma</h2>
         </div>
-        <form 
-            class="search-form" 
-            action="#" 
-            method="get"
-            >
-            <input 
-                type="search"
-                name="q" 
-                placeholder="Buscar Producto"
-            >
-            <button 
-                type="submit"
-                >
+        <form class="search-form" action="#" method="get">
+            <input type="search" name="q" placeholder="Buscar Producto">
+            <button type="submit">
                 Buscar
             </button>
         </form>
@@ -91,33 +78,34 @@ var prodId = getParameterByName('prodId');
             </ul>
         </nav>
     </header>
-    
 
-  <main>
-    <div class="prod">
-    <h1 id="alt"></h1>
-    <span>Precio: </span><span id="precio"></span>
-    <br />
-    <br />
-    <div id="pid"></div>
-</div>
-</main>
+
+    <main>
+        <div class="prod">
+            <h1 id="alt"></h1>
+            <span>Precio: </span><span id="precio"></span>
+            <br />
+            <br />
+            <div id="pid"></div>
+        </div>
+    </main>
 </body>
 <footer>
-        <div class="copyright">
-            <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
-            <br>
-            <small><a href="#">Términos y condiciones</a></small>
-        </div>
-        
-        <div class="social-icons">
-            <small>Nuestras redes sociales</small><br>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="fab fa-facebook fa-lg"></i>
-            </a>
-        </div>
-    </footer>
+    <div class="copyright">
+        <small>© 2024 Generación Farma SRL. Todos los derechos reservados.</small>
+        <br>
+        <small><a href="#">Términos y condiciones</a></small>
+    </div>
+
+    <div class="social-icons">
+        <small>Nuestras redes sociales</small><br>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook fa-lg"></i>
+        </a>
+    </div>
+</footer>
+
 </html>
