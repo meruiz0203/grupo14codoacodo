@@ -4,6 +4,6 @@
 
 @media only screen and (max-device-width: 768px){
 iframe{
-  max-width: 80%;
+  max-width: 100%;
 }
 }

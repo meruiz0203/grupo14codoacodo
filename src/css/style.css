@@ -95,6 +95,17 @@ body > footer {
     backdrop-filter: blur(10px); 
 }
 
+.prod{
+    text-align: center;
+}
+#precio{
+    font-weight: 800;
+}
+
+.imagenes:hover{
+  transform: scale(1.05); 
+}
+
 @media only screen and (max-device-width: 768px) {
     body > main {
         padding-left: 10%;
@@ -106,6 +117,11 @@ body > footer {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+.prod{
+    font-size: 12px;
+}
+
 }
 
 
