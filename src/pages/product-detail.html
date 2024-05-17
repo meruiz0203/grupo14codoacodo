@@ -30,12 +30,15 @@
                 let div = document.createElement('div');
                 let img = document.createElement('img');
                 img.src = prod.src;
-                img.style.height = "250px"
+                img.style.height = "auto";
+                img.style.width = "50%";
                 let alt = prod.alt;
                 let precio = prod.precio;
+                let descripcion = prod.descripcion;
                 document.getElementById("pid").appendChild(img);
                 document.getElementById("alt").append(alt);
                 document.getElementById("precio").append(precio);
+                document.getElementById("descripcion").innerHTML = descripcion;
 
                 setTimeout(() => {
                     resolve(prod);
@@ -82,12 +85,17 @@
 
     <main>
         <div class="prod">
-            <h1 id="alt"></h1>
-            <span>Precio: </span><span id="precio"></span>
-            <br />
-            <br />
-            <div id="pid"></div>
-        </div>
+        <h1 id="alt"></h1>
+        <span>Precio: </span><span id="precio"></span>
+        <br />
+        <br />
+        <div id="pid"></div>
+        <br>
+        <span>Descripcion: </span> 
+        <br>
+        <br> 
+        <span id="descripcion"></span>
+      </div>
     </main>
 </body>
 <footer>
