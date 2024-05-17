@@ -1,5 +1,5 @@
-.titulo{
-  text-align: center; 
+.titulo {
+  text-align: center;
 }
 
 .contenedor {
@@ -10,43 +10,49 @@
 
 .contenedorImagenes {
   display: flex;
-  animation: carrusel 40s linear infinite;
-  width: calc(250px * 24);
-
+  animation: carrusel 30s linear infinite;
+  width: calc(250px * 12);
   gap: 1em;
-  
 }
+
 .imagenes {
   width: 250px;
   position: relative;
 }
 
-.contenedor .imagenes img {
+img{
   width: 100%;
-  
+  height: auto;
 }
-
 .promo1 {
   position: absolute;
-  max-width: 30%;
+  max-width: 25%;
   top: 10px;
   left: 20px;
 }
 
 .promo2 {
   position: absolute;
-  max-width: 30%;
+  max-width: 25%;
   top: 10px;
   left: 20px;
 }
-.promo1:hover{
+.promo1:hover {
   scale: 1.2;
 }
 .promo2:hover {
   scale: 1.2;
 }
-main p {
-  color: white;
+
+.titulo h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.titulo p {
+  color: var(--color-control-1);
+  font-size: 1.5em;
+  text-shadow: 0px 0px 4px var(--color-fondo-8);
 }
 
 @keyframes carrusel {
@@ -58,8 +64,8 @@ main p {
   }
 }
 
-@media only screen and (max-device-width: 768px){
-.contenedor .imagenes {
-  width: 200px;
-}
+@media only screen and (max-device-width: 768px) {
+  .contenedor .imagenes {
+    width: 200px;
+  }
 }
