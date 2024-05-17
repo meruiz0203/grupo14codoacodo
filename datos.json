@@ -1,14 +1,86 @@
 [
-    { "id" : "1", "src": "../img/7509546061689.jpg", "alt": "Cepillo Colgate", "precio" : "$1000" },
-    { "id" : "2", "src": "../img/7509546686042.jpg", "alt": "Pasta Dental Colgate", "precio" : "$1500" },
-    { "id" : "3", "src": "../img/7509552902358.jpg", "alt": "Acondicionador Elvive", "precio" : "$3000" },
-    { "id" : "4", "src": "../img/7791293050119.jpg", "alt": "Shampoo Treseme", "precio" : "$4000" },
-    { "id" : "5", "src": "../img/7791984000065.jpg", "alt": "Gel Intimo Genella", "precio" : "$5000" },
-    { "id" : "6", "src": "../img/7791984000737.jpg", "alt": "Gotas Coltix", "precio" : "$7000" },
-    { "id" : "7", "src": "../img/7793742005534.jpg", "alt": "Gel Facial Aveno", "precio" : "$10000" },
-    { "id" : "8", "src": "../img/7794626013973.jpg", "alt": "Toallitas Humedas Huggie's", "precio" : "$3000" },
-    { "id" : "9", "src": "../img/7795323775348.jpg", "alt": "Leche Nutrilon", "precio" : "$11000" },
-    { "id" : "10", "src": "../img/7891024030813.jpg", "alt": "Enjuague Bucal Colgate", "precio" : "$6000" },
-    { "id" : "11", "src": "../img/7796285289348.jpg", "alt": "Espuma Intima", "precio" : "$4500" }
-    ]
-
+  {
+    "id": "1",
+    "src": "../img/7509546061689.jpg",
+    "alt": "Cepillo Colgate",
+    "precio": "$1000",
+    "descpripcion": "Para personas que buscan mantener sus encías sanas, el cepillo dental Colgate Encías Therapy Carbón masajea suavemente y ayuda a revitalizar las encías otorgando una limpieza bucal superior y espumante."
+  },
+  {
+    "id": "2",
+    "src": "../img/7509546686042.jpg",
+    "alt": "Pasta Dental Colgate total",
+    "precio": "$1500",
+    "descripcion": "Funciona con tecnología con carbón activado para una sonrisa deslumbrante."
+  },
+  {
+    "id": "3",
+    "src": "../img/7509546690285.jpg",
+    "alt": "Pasta Dental Colgate sensitive",
+    "precio": "$1500",
+    "descripcion": "Funciona con tecnología con carbón activado para una sonrisa deslumbrante."
+  },
+  {
+    "id": "4",
+    "src": "../img/7509552902358.jpg",
+    "alt": "Acondicionador Elvive",
+    "precio": "$3000",
+    "descripcion": "¿Cabello deshidratado o pesado? ¡Hidrátalo con el nuevo Acondicionador Elvive Hidra Rellenador con Ácido Hialurónico! Deja tu pelo intensamente hidratado, ligero y brillante. "
+  },
+  {
+    "id": "5",
+    "src": "../img/7791293050119.jpg",
+    "alt": "Shampoo Treseme",
+    "precio": "$4000",
+    "descripcion": "Tresemmé trae las últimas tendencias de estilo y tecnología con el nuevo Shampoo TRESEMME Ondas Boho. ¡Calidad Profesional todos los días! Este producto para el cabello posee una acción texturizadora duradera para ondas naturalmente descontracturadas"
+  },
+  {
+    "id": "6",
+    "src": "../img/7791984000065.jpg",
+    "alt": "Gel Intimo Genella",
+    "precio": "$5000",
+    "descripcion": "Con ácido hialurónico, aloe vera y vitamina E. Hidratante y lubricante diario de la zona vulvovaginal. Brinda alivio inmediato y duradero de los síntomas de la sequedad vaginal como picazón, irritación y ardor. Favorece el placer durante las relaciones sexuales aportando una sensación semejante a la humectación natural, sin generar pérdida de sensibilidad ni afectar el látex de los preservativos."
+  },
+  {
+    "id": "7",
+    "src": "../img/7791984000737.jpg",
+    "alt": "Gotas Coltix",
+    "precio": "$7000",
+    "descripcion": "Solución estéril para la limpieza y conservación de lentes de contacto. Limpia, desinfecta, enjuaga, lubrica y conserva todo tipo de lentes de contacto blandos."
+  },
+  {
+    "id": "8",
+    "src": "../img/7793742005534.jpg",
+    "alt": "Gel Facial Aveno",
+    "precio": "$10000",
+    "descripcion": "El gel facial Aveno hidrata, descongestiona y alivia las pieles mixtas, oleosas y sensibles. Puede ser utilizada en pieles reactivas con irritación y prurito. Posee algas marinas que actúan como sebo regulador, manzanilla que descongestiona y vitamina E como antioxidante"
+  },
+  {
+    "id": "9",
+    "src": "../img/7794626013973.jpg",
+    "alt": "Toallitas Humedas Huggie's",
+    "precio": "$3000",
+    "descripcion": "Bebé, descubrirás que a veces las cosas pueden desordenarse un poco, y ponerse un poco sucias. Pero tranquilo: nuestras toallitas húmedas Manitos & Carita están aquí para limpiar tu cuerpito, manos y carita . Están elaborados con ingredientes suaves y Eco-Fibras*. Limpian de verdad y delicadamente. *Fibras de origen natural que contiene el producto"
+  },
+  {
+    "id": "10",
+    "src": "../img/7795323775348.jpg",
+    "alt": "Leche Nutrilon",
+    "precio": "$11000",
+    "descripcion": "Fórmula láctea de inicio, con hierro, una mezcla exclusiva de prebióticos GOScc/FOScl (9:1), ácidos grasos poliinsaturados de cadena larga y nucleótidos. Libre de gluten. Con ingredientes que contribuyen a reforzar el sistema inmune, favorecen el desarrollo cerebral y ayudan a un metabolismo saludable. Con contenido proteico adaptado."
+  },
+  {
+    "id": "11",
+    "src": "../img/7891024030813.jpg",
+    "alt": "Enjuague Bucal Colgate",
+    "precio": "$6000",
+    "descripcion": "El enjuague bucal Colgate® Plax Original no contiene alcohol y ofrece frescura que dura 10 veces más. Sensación de frescura dura 10X más vs. sólo el cepillado. **Ayuda a prevenir hasta 99% de las bacterias anaeróbias cultivables. Producto cosmético sin acción terapéutica."
+  },
+  {
+    "id": "12",
+    "src": "../img/7796285289348.jpg",
+    "alt": "Espuma Intima",
+    "precio": "$4500",
+    "descripcion": "Su exclusiva fórmula combina: Prebióticos, que ayudan a fortalecer las defensas íntimas naturales; Ácido hialurónico: hidrata profundamente y devuelve elasticidad, y lubrica cuando hay sequedad; Ácido láctico: cuida y protege la microbiota vaginal ya que regula el pH, manteniendo equilibrado y saludable el microbioma vaginal. Evita, además, el desarrollo de microorganismos responsables del mal olor."
+  }
+]
