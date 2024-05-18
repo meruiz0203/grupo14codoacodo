@@ -4,13 +4,13 @@ let array = []
 
 document.addEventListener('DOMContentLoaded', async function () {
   button.addEventListener('click', async function () {
-    let search = document.getElementById('search').value
+    let search = document.getElementById('search').value.toLowerCase()
     const searched = await fetch('../../datos.json').then((response) =>
       response.json()
     )
 
     for (let i = 0; i < searched.length; i++) {
-      if (searched[i].alt.includes(search)) {
+      if (searched[i].alt.toLowerCase().includes(search)) {
         array.push(searched[i])
       }
     }
