@@ -1,6 +1,8 @@
 const button = document.getElementById('search-button')
 let prodId = ''
 
+
+document.addEventListener('DOMContentLoaded', async function() { 
 button.addEventListener('click', async function () {
   let search = document.getElementById('search').value
   let array = []
@@ -51,8 +53,8 @@ button.addEventListener('click', async function () {
                     
         }
     }
-    console.log(location)
     document.getElementById('search').value = ""
+    array = []
 })
 
-
+})
