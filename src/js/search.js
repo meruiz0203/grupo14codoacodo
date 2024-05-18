@@ -25,11 +25,11 @@ button.addEventListener('click', async function () {
             a.href = `./product-detail.html?prodId=${array[i].id}`
             let div = document.createElement("div")
             let img = document.createElement("img")
+            img.style.width = "150px"
             img.style.height="150px"
             img.src = "."+ array[i].src.slice(1)
             div.style.float = "inline-start"
             img.style.marginRight = "15px"
-            img.style.width = "auto"
             a.appendChild(img)
             div.appendChild(a)
             div_busqueda.appendChild(div)                   
