@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     if (array.length > 0) {
       document.getElementById('titulo').style.display = 'none'
+      if(document.getElementById('flex') !== null ){
+      document.getElementById('flex').style.display = 'none'
+      }
       let div_busqueda = document.getElementById('busqueda')
       div_busqueda.innerHTML= ""
       let h2_busqueda = document.createElement('h2')
