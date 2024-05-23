@@ -26,13 +26,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       h2_busqueda.innerHTML = 'Resultados de la búsqueda: '
       div_busqueda.appendChild(h2_busqueda)
       for (let i = 0; i < array.length; i++) {
-        if (location.pathname === '/src/pages/product.html') {
+        if (location.pathname === '/src/pages/product.html'|| location.pathname === '/src/pages/product') {
           let a = document.createElement('a')
           a.href = `./product-detail.html?prodId=${array[i].id}`
           let div = document.createElement('div')
           let img = document.createElement('img')
           img.style.width = '150px'
           img.style.height = '150px'
+          console.log(array[i].src)
           img.src = '.' + array[i].src.slice(1)
           div.style.float = 'inline-start'
           img.style.marginRight = '15px'
@@ -55,7 +56,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
     document.getElementById('search').value = ''
-    console.log(array)
     array = []
   })
 })
