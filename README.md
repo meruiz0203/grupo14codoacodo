@@ -47,7 +47,7 @@
 - Ubicación
 
 ##### Formulario de contacto
-Los siguientes campos son de entrada obligatoria.
+Los siguientes campos son de entrada obligatoria. Si no ingresa un dato devuelve una advertencia al usuario.
 - Nombre completo del cliente (input de texto)
 - Fecha de nacimiento (input de fecha)
 - Correo electrónico (input de texto)
