@@ -9,7 +9,6 @@ let imgIndexContainer = document.getElementById("imgIndexContainer");
 if (imgProductosContainer) {
   contenedorImagenes = imgProductosContainer
   url = '../img/'
-  
 } else {
   contenedorImagenes = imgIndexContainer
   url = './src/img/'
@@ -46,6 +45,8 @@ switch (diaSemana) {
     contenedorImagenes.querySelector("#facial").appendChild(imagen40);
     break;
   case 4: // Jueves
+     contenedorImagenes.querySelector("#pasta2").appendChild(imagen40);
+     contenedorImagenes.querySelector("#intimo2").appendChild(imagen20);
     break;
   case 5: // Viernes
     contenedorImagenes.querySelector("#acondicionador").appendChild(imagen20);
