@@ -103,8 +103,15 @@ body > footer {
   font-weight: 800;
 }
 
-.imagenes:hover {
-  transform: scale(1.05);
+#descripcion {
+    line-height: 1.75em;
+    text-align: justify;
+    color: var(--color-fondo-8);
+    text-shadow: 0px 0px 1px var(--color-fondo-8);
+  }
+
+.imagenes:hover{
+  transform: scale(1.05); 
 }
 
 @media only screen and (max-device-width: 768px) {

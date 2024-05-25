@@ -37,10 +37,12 @@
             <input 
                 type="search"
                 name="q" 
+                id="search"
                 placeholder="Buscar Producto"
             >
             <button 
-                type="submit"
+            type="button"
+                id="search-button"
                 >
                 Buscar
             </button>
@@ -57,7 +59,8 @@
     
 
   <main>
-    <div class="titulo">
+      <div id="busqueda"></div>
+    <div class="titulo" id="titulo">
       <h2>Somos tu Farmacia de Confianza</h2>
       <p>Recordá que hoy encontrarás las promociones vigentes.</p>
     </div>
@@ -68,9 +71,9 @@
             <a href="src/pages/product-detail.html?prodId=1"><img src="./src/img/7509546061689.jpg" alt="cepillo colgate" /></a>
           </div>
           <div class="imagenes" id="pasta">
-            <a href="src/pages/product-detail.html?prodId=2"><img src="./src/img/7509546686042.jpg" alt="pasta dental colgate total" /></a>
+            <a href="src/pages/product-detail.html?prodId=2"><img src="./src/img/7509546686042.jpg" alt="pasta dental colgate" /></a>
           </div>
-          <div class="imagenes" id="pasta">
+           <div class="imagenes" id="pasta2">
             <a href="src/pages/product-detail.html?prodId=3"><img src="./src/img/7509546690285.jpg" alt="pasta dental colgate sensitive" /></a>
           </div>
           <div class="imagenes" id="acondicionador">
@@ -97,7 +100,7 @@
           <div class="imagenes" id="bucal">
             <a href="src/pages/product-detail.html?prodId=11"><img src="./src/img/7891024030813.jpg" alt="enjuague bucal colgate" /></a>
           </div>
-          <div class="imagenes" id="intimo">
+          <div class="imagenes" id="intimo2">
             <a href="src/pages/product-detail.html?prodId=12"><img src="./src/img/7796285289348.jpg" alt="espuma intima" /></a>
           </div>
         </div>
@@ -123,5 +126,6 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/search.js"></script>
 </body>
 </html>

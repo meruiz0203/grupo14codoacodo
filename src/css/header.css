@@ -86,6 +86,10 @@ nav ul li a {
   padding: 6px 8px;
 }
 
+.navSinBusc {
+  margin-top: 50px;
+}
+
 @media only screen and (max-device-width: 768px) {
   .search-form {
     display: flex;
@@ -101,6 +105,10 @@ nav ul li a {
 
   nav {
     padding: 0;
+    margin-top: -15px;
+  }
+  .navSinBusc {
+    margin-top: -15px;
   }
 }
 
@@ -130,5 +138,8 @@ nav ul li a {
     flex-wrap: wrap;
     padding: 0;
     margin-top: 0;
+  }
+  .navSinBusc {
+    margin-top: 0px;
   }
 }

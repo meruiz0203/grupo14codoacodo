@@ -26,6 +26,8 @@
 
 > Alexis Jankowicz, tengo 46 años, soy de Capital Federal, actualmente trabajo como administrativo en un area del Gobierno de la Ciudad; soy recibido del secundario como Tecnico en Informatica y por cuestiones personales como laborales me alejaron del rubro, al ser autodidacta me volvi a sumergir en el mundo digital para ampliar mis conocimiento y en algun momento proyectarlos como salida laboral
 
+> Sebastián Basconcelo, tengo 44 años, soy de Prov.de Bs.As, actualmente trabajo como administrativo en una Distribuidora Mayorista; Me gusta todo lo relacionado a la tecnología y la programación.
+
 ---
 
 ### __PROYECTO: GENERACIÓN FARMA SRL__
