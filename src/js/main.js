@@ -9,7 +9,6 @@ let imgIndexContainer = document.getElementById("imgIndexContainer");
 if (imgProductosContainer) {
   contenedorImagenes = imgProductosContainer
   url = '../img/'
-  
 } else {
   contenedorImagenes = imgIndexContainer
   url = './src/img/'
